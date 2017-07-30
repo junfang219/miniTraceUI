@@ -29,10 +29,12 @@ body {
 	font-size: 16px;
 }
 
-#expanable {
+button {
 	font-family: "Helvetica Neue", Arial, sans-serif;
-	font-size: 16px;
+	font-size: 12px;
 	border-radius: 12px;
+	display: inline;
+
 }
 
 #content {
@@ -45,10 +47,12 @@ body {
 
 table {
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
+    margin-bottom:20px;
+
 }
 
-table, td, th {
+.informationtable {
     border: 1px solid black;
 	height: 35px;
 	padding: 5px;
@@ -60,7 +64,7 @@ table, td, th {
 img {
 	display: block;
 	margin:auto;
-	width: 40%;
+	width: 100%;
 }
 
 
@@ -112,6 +116,7 @@ form {
 
 ul{
 	padding-left: 10px;
+	font-weight: bold;
 }
 
 li {
@@ -120,4 +125,14 @@ li {
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	list-style-type: none;
 	list-style-position: outside;
+}
+
+p {
+	padding: 2px;
+}
+.admin {
+	width:800px;
+	margin: auto;
+	box-shadow:1.25px 1.25px 8px #48b8e5;
+	text-align: center;
 }

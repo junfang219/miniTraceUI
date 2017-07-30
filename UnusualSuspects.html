@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>miniTRACE</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Radley" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://surveyjs.azureedge.net/0.12.20/survey.jquery.js"></script>
+		<script src="https://surveyjs.azureedge.net/0.12.20/survey.jquery.min.js"></script>
+		<link rel="stylesheet" href="css/survey.css">
+		<script src="javascript/ckeditor.js"></script>
+		<link rel="stylesheet" href="css/modal.css">
+	</head>
+
+	<body>
+		<div id="tracebar">
+		    <header>miniTRACE</header>
+		</div>
+
+			<p class="question">Based on the evidence below, why did Yuriy Nadoba attack the journalist? 
+				<button id="expandable" class="unfolded" style="display: inline;" >Hide</button>
+				<button id="myBtn" style="width: 40px;display: inline;border: none;padding: 0px;vertical-align: middle;"><img src="img/picbutton.png" alt="picbutton"></button>	  
+				<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+						<span class="close">&times;</span>
+						    <img src="img/UnusualSuspectsBackground.jpg" alt="UnusualSuspectsBackground">
+						</div>
+
+					</div>
+
+			</p>
+
+		<div id="content">
+			<table >
+				<td style="width: 80%">
+
+					<p>The following incident was reported to an independent investigator in your agency’s employment. This investigator believes the report below, including photograph, to be reliable and that the incident is important in understanding the political situation in the Ukraine.</p>
+
+					<p>On May 18, 2013, Channel Nine TV reporter Svitlana Demkovych and her husband, photographer Oleg Gotsa, were attacked by the young man in the photo while covering an anti-government demonstration in Kyiv. The incident happened in front of the Ministry of Internal Affairs administration building on Volodymyrska Street.</p>
+
+					<p>The police did not get involved in the incident, although the journalists tried to get law enforcement to defend them. As a result of being badly beaten, Svitlana Demkovych was taken away in an ambulance – doctors found out she had received a concussion. A video recording of the incident showed that the police, who had been standing in front of the group of young men who attacked, did nothing to stop the assault on the journalists. The man in a black tracksuit had been identified as Yuriy Nadoba (20) of Bila Tserkva.</p>
+
+				</td>
+				
+				<td>
+
+					<img src="img/UnusualSuspectsBackground.jpg" alt="UnusualSuspectsBackground">
+				</td>
+			</table>
+		</div>
+	
+
+
+		<div class="row">
+			<div id="tools" class="col-md-3">
+				<p class="tools">Tools</p>
+				
+				<div class="toolscontent">
+					<p class="notes">notes</p>
+
+					<form>
+            		<textarea name="editor1" id="editor1" rows="50" cols="10"> you can take notes here
+            		</textarea>
+            		<script>
+                	// Replace the <textarea id="editor1"> with a CKEditor
+                	// instance, using default configuration.
+                	CKEDITOR.replace( 'editor1', 
+                		{language: 'en',uiColor: '#9AB8F3'} );
+            		</script>
+            		</form>
+
+				</div>
+        		
+			</div>
+			
+			<div id="survey" class="col-md-6">
+				<p class="survey">Survey</p>
+
+				<div class="surveycontent">
+					<p>Please read the case information and resources to answer the questions</p>
+					<!-- <div id="surveyElement"></div>
+    				<div id="surveyResult"></div>
+    				<script src="javascript/survey.js"></script> -->
+    				<div id="surveyContainer"></div>
+				</div>
+			</div>
+			
+			<div id="resources" class="col-md-3">
+				<p class="resources">Resources</p>
+				<ul class="resourceslist">
+					<li> <a href="UnusualSuspects/Human_Rights_Watch_Ukraine.html" target="_blank">Human Rights Watch Ukraine</a></li>
+					<li><a href="UnusualSuspects/Facebook_Profile.html" target="_blank">Facebook Profile</a></li>
+					<li><a href="UnusualSuspects/The_Washington_Post.html" target="_blank">The Washington Post</a></li>
+					<li><a href="UnusualSuspects/Wikipedia.html" target="_blank">Wikipedia</a></li>
+					<li><a href="UnusualSuspects/Daily_Mail.html" target="_blank">Daily Mail</a></li>
+					<li><a href="UnusualSuspects/Tabloidpravdacomua.html" target="_blank">Tabloid.pravda.com.ua</a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+
+		<script src="javascript/topbar.js"></script>
+		<script src="javascript/expanablebar.js"></script>
+		<script src="javascript/survey1.js"></script>
+		<script src="javascript/modal.js"></script>
+	</body>
+</html>

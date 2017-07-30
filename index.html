@@ -1,110 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>miniTRACE</title>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Radley" rel="stylesheet">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="css/style.css">
-		<script src="https://surveyjs.azureedge.net/0.12.20/survey.jquery.js"></script>
-		<script src="https://surveyjs.azureedge.net/0.12.20/survey.jquery.min.js"></script>
-		<link rel="stylesheet" href="css/survey.css">
-		<script src="javascript/ckeditor.js"></script>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<title>miniTRACE</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Radley" rel="stylesheet">
+</head>
+<body>
 
-	<body>
-		<div id="tracebar">
-		    <header>miniTRACE</header>
-		</div>
-
-		<p class="question">What is the probability that the journalist correctly identified the tanks as Russian?  
-			<span><button id="expandable" class="unfolded">Hide</button></span>
-		</p>
-
-		<div id="content">
-			<p>Please consult the following scale to assess probabilities for your answer:</p>
-			
-			<table>
-				<tr>
-					<th>almost no chance</th>
-					<th>very unlikely</th>
-					<th>unlikely</th>
-					<th>roughly even chance</th>
-					<th>likely</th>
-					<th>very likely</th>
-					<th>almost certainly</th>
-				</tr>
-
-				<tr>
-					<td>01 - 05 %</td>
-					<td>05 - 20 %</td>
-					<td>20 - 45 %</td>
-					<td>45 - 55 %</td>
-					<td>55 - 80 %</td>
-					<td>80 - 95 %</td>
-					<td>95 - 99 %</td>
-				</tr>
-			</table>
-			
-			<p>These tanks were photographed by a freelance journalist during the late Fall of 2016 close to the joint border of Latvia and Belarus. The journalist asserted that these were Russian vehicles and that they were just inside Latvian territory. If this is true, this is a serious threat to Latvian territorial sovereignty. Based on the evidence provided, please consider the likelihood that these images show tanks that would be consistent with a Russian led or Russian backed incursion.</p>
-			<img src="img/RussianTank.png" alt="RussianTank">
-		</div>
-		
-		<div class="row">
-			<div id="tools" class="col-md-3">
-				<p class="tools">Tools</p>
-				
-				<div class="toolscontent">
-					<p class="notes">notes</p>
-
-					<form>
-            		<textarea name="editor1" id="editor1" rows="50" cols="10"> you can take notes here
-            		</textarea>
-            		<script>
-                	// Replace the <textarea id="editor1"> with a CKEditor
-                	// instance, using default configuration.
-                	CKEDITOR.replace( 'editor1', 
-                		{language: 'en',uiColor: '#9AB8F3'} );
-            		</script>
-            		</form>
-
-				</div>
-        		
-			</div>
-			
-			<div id="survey" class="col-md-6">
-				<p class="survey">Survey</p>
-
-				<div class="surveycontent">
-					<p>Please read the case information and resources to answer the questions</p>
-					<!-- <div id="surveyElement"></div>
-    				<div id="surveyResult"></div>
-    				<script src="javascript/survey.js"></script> -->
-    				<div id="surveyContainer"></div>
-				</div>
-			</div>
-			
-			<div id="resources" class="col-md-3">
-				<p class="resources">Resources</p>
-				<ul class="resourceslist">
-					<li> <a href="tank/Political map of Eastern Europe.html" target="_blank">Political map of Eastern Europe</a></li>
-					<li><a href="tank/Highlights of NATO-Russia relations.html" target="_blank">Highlights of NATO-Russia relations</a></li>
-					<li><a href="tank/Current Russian tank- Mark IX.html" target="_blank">Current Russian tank: Mark IX</a></li>
-					<li><a href="tank/Russian Tanks near border of Crimea.html" target="_blank">Russian tanks near Crimea</a></li>
-					<li><a href="tank/Tanks_in_Chechnya.html" target="_blank">Tanks in Chechnya</a></li>
-					<li><a href="tank/The_Mark_VI.html" target="_blank">The Mark VI</a></li>
-					<li><a href="tank/Modernizations_in_Ukraine.html" target="_blank">Modernization in Ukraine</a></li>
-					<li><a href="tank/Ukraine_Crisis.html" target="_blank">Ukraine Crisis</a></li>
-					<li><a href="tank/Current_Operators_Mark VI.html" target="_blank">Current Operators Mark VI</a></li>
-				</ul>
-			</div>
-		</div>
-
-		
-
-		<script src="javascript/topbar.js"></script>
-		<script src="javascript/expanablebar.js"></script>
-		<script src="javascript/survey1.js"></script>
-	</body>
+	<div id="tracebar">
+			<header>miniTRACE</header>
+	</div>
+	
+	<div class="admin">		
+		<p style="margin-top: 80px; font-size: 20px"><strong>Here is your task:</strong></p>
+		<ul>
+			<li><a href="tank.html">Tanks</a></li>
+			<li><a href="UnusualSuspects.html">Unusual Suspects</a></li>
+			<li>Drug Interdiction</li>
+			<li>Is Kalmius Next?</li>
+			<li>Who Murdered Linda </li>
+			<li>Nelson?</li>
+			<li>Which Lovell?</li>
+		</ul>
+	</div>	
+	<script src="javascript/topbar.js"></script>
+	<script src="javascript/expanablebar.js"></script>
+</body>
 </html>
