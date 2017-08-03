@@ -29,7 +29,9 @@ h1 {
 
 p {
     padding: 5px;
+    line-height: 150%;
 }
+
 
 
 .content, .source {
@@ -54,8 +56,13 @@ p {
 }
 
 table, tr, th, td {
-    border:1px solid;
+    border:none;
+    line-height: 150%;
     /*margin: auto;*/
+}
+
+li {
+    line-height: 150%;
 }
 
 
